@@ -8,3 +8,10 @@
 3. Display the images and work on styles.
 4. Use `cdkScrollable` to load the images when the user is scrolling and not an once.
 5. Use `Angular Material tooltip` for tooltip feature.
+
+# Setup
+- Go to `image-scroller` folder
+- install dependencies with `npm-install`
+
+# Run
+- `ng serve`
