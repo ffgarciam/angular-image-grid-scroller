@@ -1,6 +1,6 @@
 # angular-image-grid-scroller
 
-# Description
+# Workflow Process
 1. Work on test.
   - First test the service to get the images.
   - Test the component in charge to render the gallery.
@@ -16,6 +16,12 @@
 # Run
 - `ng serve`
 
+# Things to improve
+- More tests.
+- Improve styles.
+
 # Additional notes
 Decide to use `https://picsum.photos/list` as a external data source since is easy to use, but doesn't have
 title and description fields, I'm using instead author and author url fields.
+
+Decide to not use redux since the app doesn't have a complex state and use redux in this case will just be overwhelming.
