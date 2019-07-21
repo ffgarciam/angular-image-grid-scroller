@@ -1,0 +1,25 @@
+<main class="gallery-container">
+  <mat-progress-spinner
+    mode="indeterminate"
+    class="spinner"
+    *ngIf="loadingImages"
+  ></mat-progress-spinner>
+  <cdk-virtual-scroll-viewport
+    *ngIf="!loadingImages"
+    itemSize="18"
+    minBufferPx="36" maxBufferPx="144"
+  >
+    <ul class="gallery">
+      <li class="image" *cdkVirtualFor="let image of galleryImages; templateCacheSize: 1">
+        <img
+          src="{{ this.getDisplayImageUrl(image.id) }}"
+          matTooltip="{{ image.author_url }}"
+          matTooltipPosition="above"
+          matTooltipShowDelay="300"
+        />
+        <b>{{image.author}}</b>
+      </li>
+    </ul>
+
+  </cdk-virtual-scroll-viewport>
+</main>
