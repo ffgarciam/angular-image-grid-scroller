@@ -1,6 +1,7 @@
 $max-width: 1200px;
 $image-width: 180px;
 $image-height: 250px;
+$image-container-height: 275px;
 
 .gallery {
   max-width: $max-width;
@@ -9,13 +10,12 @@ $image-height: 250px;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, $image-width);
-  grid-template-rows: repeat(auto-fill, $image-height);
+  grid-template-rows: repeat(auto-fill, $image-container-height);
   grid-gap: 1rem;
   justify-content: center;
 }
 
 .image {
-  margin-bottom: .625rem;
   text-align: center;
 }
 img {
@@ -26,7 +26,7 @@ img {
 }
 cdk-virtual-scroll-viewport {
   height: 90vh;
-  margin: 20px auto;
+  margin: 45px auto 20px;
   scrollbar-color: #ff4081 #f5f5f5;
   scrollbar-width: thin;
 }

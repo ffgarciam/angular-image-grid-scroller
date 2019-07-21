@@ -9,7 +9,7 @@ import {Image} from "../models/image";
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
-  private TIMES_TO_COPY = 11;
+  private TIMES_TO_COPY = 11; // 993 times per round
   galleryImages: Image[];
   imageSubscription: Subscription;
   loadingImages: boolean;

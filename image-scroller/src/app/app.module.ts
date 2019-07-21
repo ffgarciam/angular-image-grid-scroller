@@ -8,8 +8,10 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MatTooltipModule } from '@angular/material';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {
+  MatTooltipModule,
+  MatProgressSpinnerModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
