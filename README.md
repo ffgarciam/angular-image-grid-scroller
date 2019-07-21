@@ -15,3 +15,7 @@
 
 # Run
 - `ng serve`
+
+# Additional notes
+Decide to use `https://picsum.photos/list` as a external data source since is easy to use, but doesn't have
+title and description fields, I'm using instead author and author url fields.
